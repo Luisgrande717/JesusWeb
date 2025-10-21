@@ -3,7 +3,10 @@
     "allow": [
       "Bash(npm install)",
       "Bash(npm run dev)",
-      "Bash(git add .)"
+      "Bash(git add .)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nAdd complete auto maintenance web application\n\nBuilt a production-ready full-stack application for transparent auto maintenance service.\n\nBackend Features:\n- Express.js server with MongoDB integration\n- JWT authentication with role-based access (user/mechanic/admin)\n- 21 REST API endpoints for appointments, invoices, repair updates\n- WebSocket server for real-time updates\n- Stripe payment integration\n- File upload system for repair photos\n- Comprehensive security (Helmet, CORS, rate limiting, validation)\n- 4 Mongoose models with full schemas\n\nFrontend Features:\n- React 18 + Vite development setup\n- 6 pages: Home, About, Services, Login, Register, Dashboard\n- Tailwind CSS responsive design\n- Real-time WebSocket integration\n- Authentication context with state management\n- Protected routes for secure pages\n- Axios API client with interceptors\n\nDocumentation:\n- Complete README with setup instructions\n- Step-by-step SETUP_GUIDE\n- Comprehensive PROJECT_SUMMARY\n- QUICK_REFERENCE card for developers\n- ARCHITECTURE diagrams and flow charts\n\nSecurity:\n- bcrypt password hashing\n- JWT token verification\n- Input validation with Joi\n- MongoDB sanitization\n- XSS protection\n- Rate limiting (100 req/15min)\n- HttpOnly cookies\n\nFiles: 48 new files created (~4,500 lines of code)\nAPI Endpoints: 21 endpoints\nDatabase Models: 4 models\nReact Components: 11 components\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push origin main)",
+      "Bash(npm run build)"
     ],
     "deny": [],
     "ask": []
